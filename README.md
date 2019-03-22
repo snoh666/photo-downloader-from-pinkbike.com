@@ -6,3 +6,5 @@ Created this cause u can't download full resolution photo in any simple way than
 so i wanted to automate this process.
 
 Feel free to contact me in case errors or any improvements to code.
+
+Link to page with adds on free polish hosting: http://mikolajsnochowski.cba.pl/
