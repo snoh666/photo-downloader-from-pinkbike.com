@@ -1,7 +1,8 @@
 document.getElementById('submit').addEventListener('click', () => {
 
     //Get link inputed by user
-    let link = document.getElementById('link').value;
+    const input = document.getElementById('link');
+    let link = input.value;
     //Create variable for photoId to use it later
     let photoId;
     //Split link into array by "/"
@@ -32,6 +33,8 @@ document.getElementById('submit').addEventListener('click', () => {
                     const downloadLink = 'http://ep1.pinkbike.org/p0pb' + photoId + '/p4pb' + photoId + '.jpg';
                     //Open page to download  photo in new tab
                     window.open(downloadLink, '_blank');
+                    //Clear input
+                    input.value = '';
                 } else if(link[urlNmb + 1] == 'video') { // If link is for video
                     error.element.innerHTML = error.videoLink;
                 } else { // If link isnt a photo or video
