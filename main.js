@@ -54,6 +54,6 @@ document.getElementById('submit').addEventListener('click', () => {
 
 });
 //Add listener for pink logo click to open their site into new tab
-document.getElementById('pink-logo').addEventListener('click', () => {
+document.querySelector('img').addEventListener('click', () => {
     window.open('https://www.pinkbike.com/', '_blank');
 });
