@@ -3,37 +3,38 @@ body{
     background-color: #202020;
     font-family: 'Lato', sans-serif;
     color: #818181;
+    font-size: 18px;
 }
 *, *::before, *::after{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .wrapper{
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box;
-    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .header{
-    width: 100%;
-    height: 100px;
+    width: 100vw;
     margin-top: 20px;
     text-align: center;
 }
 .header img{
-    height: 100px;
     width: 414px;
+    cursor: pointer;
 }
 .content{
     max-width: 800px;
-    height: 350px;
-    /*background: red;*/
+    min-height: 250px;
     text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px auto 0;
-    box-sizing: border-box;
-    padding-top: 30px;
 }
 input{
     width: 300px;
@@ -55,8 +56,7 @@ input:focus::placeholder{
     opacity: 0;
 }
 span{
-    max-width: 390px;
-    height: 200px;
+    margin-bottom: 30px;
 }
 button{
     width: 100px;
@@ -79,8 +79,7 @@ button:hover{
     color: red;
 }
 .footer{
-    max-width: 600px;
-    height: 40px;
+    width: 100vw;
     text-align: center;
     margin: auto auto 10px;
 }
@@ -89,4 +88,26 @@ button:hover{
 }
 .footer a:hover{
     color: #6868ff;
+}
+
+@media screen and (max-width: 460px) {
+    body{
+        font-size: 13px;
+    }
+    .header{
+        margin-top: 0;
+    }
+    .header img{
+        width: 100%;
+    }
+    .content{
+        max-width: 300px;
+    }
+    input{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
 }
