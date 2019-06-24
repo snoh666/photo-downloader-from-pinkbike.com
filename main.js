@@ -1,5 +1,6 @@
-document.getElementById('submit').addEventListener('click', () => {
+document.querySelector('form').addEventListener('submit', e => {
 
+    e.preventDefault();
     //Get link inputed by user
     const input = document.getElementById('link');
     let link = input.value;
@@ -35,6 +36,7 @@ document.getElementById('submit').addEventListener('click', () => {
                     window.open(downloadLink, '_blank');
                     //Clear input
                     input.value = '';
+                    error.element.innerHTML = '';
                 } else if(link[urlNmb + 1] == 'video') { // If link is for video
                     error.element.innerHTML = error.videoLink;
                 } else { // If link isnt a photo or video
