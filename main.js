@@ -31,7 +31,7 @@ document.querySelector('form').addEventListener('submit', e => {
                     //Set photoId
                     photoId = link[urlNmb + 2];
                     //Set download link with proper photoId'
-                    const downloadLink = 'http://ep1.pinkbike.org/p0pb' + photoId + '/p4pb' + photoId + '.jpg';
+                    const downloadLink = `http://ep1.pinkbike.org/p0pb${photoId}/p4pb${photoId}.jpg`;
                     //Open page to download  photo in new tab
                     window.open(downloadLink, '_blank');
                     //Clear input
