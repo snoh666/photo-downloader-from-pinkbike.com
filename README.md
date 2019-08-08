@@ -5,4 +5,17 @@ so i wanted to automate this process.
 
 Feel free to contact me in case errors or any improvements to code.
 
-Link to page with adds on free polish hosting: http://mikolajsnochowski.cba.pl/
+## You can done it manually!
+
+
+  1. Get the photo id ( numbers after "/photo/" )
+  1. Copy it
+  1. Open new tab
+  1. Paste link provided below
+  1. Replace two times "{photoId}" with your photo id
+  1. Press enter
+  1. You have done it! It should start downloading photo in original size!
+
+  ```javascript
+  http://ep1.pinkbike.org/p0pb${photoId}/p4pb${photoId}.jpg
+  ````
