@@ -17,5 +17,5 @@ Feel free to contact me in case errors or any improvements to code.
   1. You have done it! It should start downloading photo in original size!
 
   ```javascript
-  http://ep1.pinkbike.org/p0pb${photoId}/p4pb${photoId}.jpg
+  `http://ep1.pinkbike.org/p0pb${photoId}/p4pb${photoId}.jpg`
   ````
